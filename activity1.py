@@ -1,7 +1,9 @@
-n = int(input("Enter the value of terms: "))
-sum = 0 
-i = 1 
-while i <= n:
-    sum = sum + i 
+string = input("please enter any word:")
+hup = input("Please enter your character:")
+i = 0 
+count = 0
+while (i < len(string)):
+    if (string[i] == hup):
+        count = count + 1
     i = i + 1
-print("The sum of first", n, "terms is:", sum)
+print("The total number of times ", hup, " has occurred = ", count)
